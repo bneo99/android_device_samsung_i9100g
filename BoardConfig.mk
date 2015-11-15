@@ -18,6 +18,7 @@
 
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
+
 USE_CAMERA_STUB := true
 
 TARGET_NO_BOOTLOADER := true
@@ -25,13 +26,13 @@ TARGET_NO_RADIOIMAGE := true
 
 TARGET_BOARD_OMAP_CPU := 4430
 TARGET_BOOTLOADER_BOARD_NAME := t1
-TARGET_BOARD_INFO_FILE ?= device/samsung/i9100g/board-info.txt
+TARGET_BOARD_INFO_FILE := device/samsung/i9100g/board-info.txt
 
 BOARD_NAND_PAGE_SIZE := 4096
 BOARD_NAND_SPARE_SIZE := 128
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_BASE := 0x40000000
-BOARD_KERNEL_CMDLINE :=
+# BOARD_KERNEL_CMDLINE :=
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/i9100g/shbootimg.mk
 
 # Inline kernel building
@@ -52,11 +53,11 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 BOARD_FLASH_BLOCK_SIZE := 4096
 
 # Hardware tunables
-BOARD_HARDWARE_CLASS := hardware/samsung/cmhw
+#BOARD_HARDWARE_CLASS := hardware/samsung/cmhw
 
 # Egl
-BOARD_EGL_CFG := device/samsung/i9100g/configs/egl.cfg
-USE_OPENGL_RENDERER := true
+#BOARD_EGL_CFG := device/samsung/i9100g/configs/egl.cfg
+#USE_OPENGL_RENDERER := true
 
 # Camera
 BOARD_CAMERA_HAVE_ISO := true
@@ -88,7 +89,7 @@ WIFI_DRIVER_MODULE_AP_ARG        := "firmware_path=/system/etc/wifi/bcmdhd_apsta
 WIFI_BAND                        := 802_11_ABG
 BOARD_HAVE_SAMSUNG_WIFI          := true
 BOARD_NO_APSME_ATTR              := true
-BOARD_NO_WIFI_HAL                := true
+# BOARD_NO_WIFI_HAL                := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
