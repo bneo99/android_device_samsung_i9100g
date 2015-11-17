@@ -19,7 +19,7 @@
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
 
-USE_CAMERA_STUB := true
+# USE_CAMERA_STUB := true
 
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
